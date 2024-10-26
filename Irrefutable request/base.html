@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question...</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <div class="box">
+          <p>Will you buy me a milkshake today?</p>
+         <div class="buttons-container">
+            <a class ="yes" href="base answ.html"><button class="yes">Yes</button></a>
+            <button class="btn" onmouseover="desvia(this)">No</button>
+         </div>
+       </div>
+    </body>
+    <script>
+        function desvia (t) {
+            var btn = t;
+            btn.style.position = 'absolute';
+            btn.style.bottom = generatePosition(10,90);
+            btn.style.left = generatePosition(10,90);
+        }
+
+        function generatePosition(min, max) {
+            return Math.random() * (max - min) + '%';
+        }
+    </script>
+</html>
